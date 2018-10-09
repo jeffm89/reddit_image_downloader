@@ -29,7 +29,7 @@ except ModuleNotFoundError:
     print('Praw not imported.  Please import and try again.')
     exit(2)
 
-user_string = 'Python:reddit_image_downloader:1.0 (by /u/merchantjeff'
+user_string = 'Python:reddit_image_downloader:1.0 (by /u/merchantjeff)'
 num_dl_threads = 1
 download_queue = Queue()
 threads = []
