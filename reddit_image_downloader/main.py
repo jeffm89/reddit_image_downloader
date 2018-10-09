@@ -29,7 +29,7 @@ except ModuleNotFoundError:
     print('Praw not imported.  Please import and try again.')
     exit(2)
 
-
+user_string = 'Python:reddit_image_downloader:1.0 (by /u/merchantjeff'
 num_dl_threads = 1
 download_queue = Queue()
 threads = []
@@ -259,7 +259,7 @@ def reddit_instance():
     log.debug('Starting Reddit instance.')
     reddit = praw.Reddit(client_id=cred_id,
                          client_secret=cred_secret,
-                         user_agent='bad-robot')
+                         user_agent=user_string)
     log.info('Completed.')
     return reddit
 
